@@ -20,4 +20,13 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('blog.urls')),
 ]
+
+# regex 규칙
+# ^ : 문자열 시작
+# $ : 문자열 끝
+# \d : 숫자
+# + : 바로 앞의 항목이 계속 나올 때
+# () : 패턴의 부분을 지정할 때
+# ex) http://www.mysite.com/post/12345 -> ^post/(\d+)/$
