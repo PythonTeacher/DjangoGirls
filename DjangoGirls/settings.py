@@ -108,3 +108,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # 정적파일 경로 추가
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+LOGIN_REDIRECT_URL = '/'
